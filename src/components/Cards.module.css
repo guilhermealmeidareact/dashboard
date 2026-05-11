@@ -11,30 +11,37 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid #222;
+    background-color: #1a1a1a;
+    transition: border-color 0.2s;
+}
+
+.card:hover {
+    border-color: #3b82f6;
 }
 
 .label {
     font-size: 0.9rem;
-    color: #94a3b8;
+    color: #888;
     font-weight: 500;
 }
 
 .valor {
     font-size: 1.8rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
-.saldo {
-    background-color: #1e293b;
+.saldo .valor {
+    color: #3b82f6;
 }
 
-.receitas {
-    background-color: #052e16;
+.receitas .valor {
+    color: #10b981;
 }
 
-.despesas {
-    background-color: #2d0a0a;
+.despesas .valor {
+    color: #e94560;
 }
 
 @media (max-width: 768px) {
